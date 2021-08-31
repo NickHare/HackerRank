@@ -1,5 +1,7 @@
 package nos.hackerrank;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class NonDivisibleSubset {
@@ -13,6 +15,14 @@ public class NonDivisibleSubset {
      */
 
     public static int nonDivisibleSubset(int k, List<Integer> s) {
+        List<Integer> remainders = new ArrayList<>();
+
+        for (Integer n : s){
+            remainders.add(n % k);
+        }
+        for (Integer n : remainders){
+
+        }
         return 1;
     }
 }
